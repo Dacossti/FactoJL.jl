@@ -1,7 +1,7 @@
-module FactoJulia
+module FactoJL
 
 # Packages
-using CSV, DataFrames, Statistics, LinearAlgebra, MultivariateStats
+using CSV, DataFrames, Statistics, LinearAlgebra
 using Bonito       # reactivity
 using Printf, Plots
 

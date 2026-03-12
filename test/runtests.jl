@@ -2,7 +2,7 @@
 
 using Test
 using CSV, DataFrames
-using FactoJulia
+using FactoJL
 
 # Path to CSV in the same folder as this test file
 csv_path = joinpath(@__DIR__, "test_data.csv")
