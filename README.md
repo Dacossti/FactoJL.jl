@@ -22,19 +22,19 @@
 
 ```julia
 using Pkg
-Pkg.add("https://github.com/Adrien-Sli/Factojulia.jl.git")
+Pkg.add("https://github.com/Dacossti/FactoJL.jl.git")
 ```
 
 Or, for development:
 
 ```julia
-Pkg.clone("https://github.com/Adrien-Sli/FactoJulia.jl.git")
-Pkg.activate("FactoJulia.jl")
+Pkg.clone("https://github.com/Dacossti/FactoJL.jl.git")
+Pkg.activate("FactoJL.jl")
 ```
 
 ## Usage
 ```julia
-using FactoJulia
+using FactoJL
 using CSV, DataFrames
 
 # Load a dataset
@@ -75,10 +75,10 @@ plot_PCA_variables(result.loadings; pcs=(1,3), var_names=result.colnames)
 ## Repository structure
 
 ```
-FactoJulia.jl/
+FactoJL.jl/
 ├─ src/
 │  ├─ pca.jl           # Main PCA functions
-│  ├─ FactoJulia.jl    # Module entrypoint
+│  ├─ FactoJL.jl    # Module entrypoint
 │  └─ test/
 │     └─ plots/        # Automatically saved plots
 ├─ test/               # Unit tests
@@ -88,6 +88,6 @@ FactoJulia.jl/
 
 ## Citation / Acknowledgement
 
-If you use FactoJulia.jl in your work, please mention it in your publication, project, or report. A simple citation like the following is appreciated:
+If you use FactoJL.jl in your work, please mention it in your publication, project, or report. A simple citation like the following is appreciated:
 
 >  PCA analysis was performed using the [FactoJL.jl package](https://github.com/Dacossti/FactoJL.jl) by [Stave Icnel Dany OSIAS](https://github.com/Dacossti).
