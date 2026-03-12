@@ -339,7 +339,7 @@ function PCA_(df::DataFrame; scale::Bool = true, ncp::Int = 5, dropNa::Bool = tr
             fig1 = scree_plot(propvar)
 
             # Save plot
-            save(joinpath(plots_dir, "scree.png"), fig1)
+            Plots.savefig(fig1, joinpath(plots_dir, "scree.png"))
 
         catch err
             @warn "scree_plot not available or errored: $err"   
@@ -353,7 +353,7 @@ function PCA_(df::DataFrame; scale::Bool = true, ncp::Int = 5, dropNa::Bool = tr
             fig2 = plot_PCA_individuals(scores)  # if this function is defined earlier
 
             # Save plot
-            save(joinpath(plots_dir, "pca_individuals.png"), fig2)
+            Plots.savefig(fig2, joinpath(plots_dir, "pca_individuals.png"))
 
         catch err
             @warn "plot_PCA_individuals not available or errored: $err"
@@ -365,7 +365,7 @@ function PCA_(df::DataFrame; scale::Bool = true, ncp::Int = 5, dropNa::Bool = tr
             fig3 =plot_PCA_variables(loadings; pcs=(1,2), var_names=numcols)
 
             # Save plot
-            save(joinpath(plots_dir, "pca_variables.png"), fig3)
+            Plots.savefig(fig3, joinpath(plots_dir, "pca_variables.png"))
 
         catch err
             @warn "plot_PCA_variables not available or errored: $err"
