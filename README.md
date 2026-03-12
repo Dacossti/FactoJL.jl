@@ -1,6 +1,6 @@
-# FactoJulia.jl
+# FactoJL.jl
 
-[![Build Status](https://github.com/Adrien-Sli/FactoJulia.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/Adrien-Sli/FactoJulia.jl/actions/workflows/CI.yml?query=branch%3Amaster)
+[![Build Status](https://github.com/Dacossti/FactoJL.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/Dacossti/FactoJL.jl/actions/workflows/CI.yml?query=branch%3Amaster)
 
 
 **FactoJulia** is a Julia package for performing **Principal Component Analysis (PCA)** with visualization, inspired by FactoMineR in R. It provides clear outputs for eigenvalues, loadings, variable contributions, and automatically generates and saves PCA plots.
